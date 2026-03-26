@@ -1,15 +1,68 @@
-# StudySync AI — Full Stack Application
+<h1 align="center">📚 StudySync AI — Smart Study Collaboration Platform</h1>
 
-## Tech Stack
-- **Frontend**: React 18 + Vite + TailwindCSS + Framer Motion + Chart.js
-- **Backend**: Node.js + Express.js + JWT Auth + Bcrypt
-- **Database**: MongoDB + Mongoose ODM
-- **Real-time**: Socket.io
-- **Email**: Nodemailer (Gmail / SMTP)
+<p align="center"> <b>If you found this project helpful, give it a ⭐️</b> </p>
+
+<p align="center">
+</p>
 
 ---
 
-## Project Structure
+
+---
+
+## 🚀 About the Project
+
+**StudySync AI** is a full-stack intelligent study collaboration platform designed to help students connect, collaborate, and stay productive.
+
+It combines real-time communication, AI-powered matching, and analytics tracking to create a focused and engaging learning environment.
+
+---
+
+## ✨ Features
+
+- 🔐 Secure Authentication (JWT-based login & signup)
+- 🤝 AI Study Partner Matching
+- 👥 Group Study Rooms with Invite Codes
+- 💬 Real-time Chat (Group + DM)
+- 📅 Study Session Scheduling & Tracking
+- 📊 Analytics Dashboard (Study Insights)
+- 🏆 Leaderboard System
+- ⏱️ Focus Timer for Productivity
+- 🔔 Notifications & Email Integration
+
+---
+
+## 🛠️ Tech Stack
+
+### 💻 Frontend
+- React 18 + Vite
+- Tailwind CSS
+- Framer Motion
+- Chart.js
+
+### ⚙️ Backend
+- Node.js + Express.js
+- JWT Authentication + Bcrypt
+
+### 🗄️ Database
+- MongoDB + Mongoose
+
+### 🔄 Real-time
+- Socket.io
+
+### 📧 Email Service
+- Nodemailer (SMTP / Gmail)
+
+---
+
+
+
+---
+
+## 📁 Project Structure
+
+
+
 
 ```
 studysync-fullstack/
@@ -86,7 +139,14 @@ studysync-fullstack/
 
 ## Quick Start
 
-### 1. Clone & Install
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/studysync-fullstack.git
 
 ```bash
 # Backend
@@ -229,3 +289,35 @@ Open **http://localhost:5173**
 - **connections** — friend/partner connections
 - **studylogs** — timer & session activity logs
 - **notifications** — system notifications
+
+---
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community!  
+If you have ideas, suggestions, or improvements, feel free to:
+
+- Fork the repository  
+- Create a new branch  
+- Make your changes  
+- Submit a pull request  
+
+---
+
+## 👩‍💻 Created By
+
+**Tejaswini Reddy**
+
+---
+
+## ❤️ Support
+
+If you found this project useful, please consider:
+
+- ⭐ Starring the repository  
+- 🍴 Forking the project  
+- 📢 Sharing it with others  
+
+---
