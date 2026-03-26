@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #080E1A; --bg2: #0D1526; --card: #111827; --surface: #162540;
+  --border: rgba(99,102,241,0.15); --border2: rgba(255,255,255,0.06);
+  --primary: #6366f1; --violet: #8b5cf6; --green: #10b981;
+  --amber: #f59e0b; --rose: #f43f5e; --cyan: #22d3ee;
+  --text: #F1F5F9; --text2: #94A3B8; --text3: #475569;
+  --font: 'Outfit', sans-serif; --body: 'Manrope', sans-serif; --mono: 'JetBrains Mono', monospace;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:var(--body); background:var(--bg); color:var(--text); overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+h1,h2,h3,h4,h5,h6 { font-family:var(--font); }
+code,pre { font-family:var(--mono); }
+::-webkit-scrollbar { width:4px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:rgba(99,102,241,0.4); border-radius:2px; }
+.gt { background:linear-gradient(135deg,#818cf8,#a78bfa,#c084fc); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.mesh { background: radial-gradient(ellipse 80% 60% at -10% 50%,rgba(99,102,241,.12) 0%,transparent 55%), radial-gradient(ellipse 60% 80% at 110% 20%,rgba(139,92,246,.1) 0%,transparent 55%), var(--bg); }
+.grad-border { background:linear-gradient(var(--card),var(--card)) padding-box, linear-gradient(135deg,rgba(99,102,241,.5),rgba(139,92,246,.3),rgba(34,211,238,.2)) border-box; border:1px solid transparent; }
+.chip { display:inline-flex;align-items:center;gap:4px;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;font-family:var(--font);background:rgba(99,102,241,.12);color:#a5b4fc;border:1px solid rgba(99,102,241,.2);cursor:pointer;transition:all .2s; }
+.chip:hover,.chip.on { background:rgba(99,102,241,.25);border-color:rgba(99,102,241,.5);color:white; }
+.bubble-me { background:linear-gradient(135deg,#4f46e5,#7c3aed);border-radius:18px 18px 4px 18px; }
+.bubble-them { background:var(--surface);border:1px solid var(--border2);border-radius:18px 18px 18px 4px; }
+.inp { background:rgba(6,13,26,.8);border:1px solid var(--border2);border-radius:12px;padding:13px 16px;color:var(--text);font-family:var(--body);font-size:14px;width:100%;outline:none;transition:border-color .2s,box-shadow .2s; }
+.inp:focus { border-color:rgba(99,102,241,.6);box-shadow:0 0 0 4px rgba(99,102,241,.1); }
+.inp::placeholder { color:var(--text3); }
+.snav { position:fixed;left:0;top:0;bottom:0;z-index:40;background:rgba(6,13,26,.98);backdrop-filter:blur(20px);border-right:1px solid var(--border2);display:flex;flex-direction:column; overflow:hidden;transition:width .3s cubic-bezier(.4,0,.2,1); }
+.snav-item { width:100%;display:flex;align-items:center;gap:10px;border:none;cursor:pointer;transition:all .2s;color:var(--text3);font-family:var(--font);font-weight:600;font-size:13px;white-space:nowrap;overflow:hidden;background:transparent; }
+.snav-item:hover { background:rgba(255,255,255,.03);color:var(--text2); }
+.snav-item.active { background:rgba(99,102,241,.1);color:#a5b4fc;border-right:2px solid #6366f1; }
+@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+@keyframes spin { to{transform:rotate(360deg)} }
+@keyframes pulse2 { 0%,100%{opacity:1} 50%{opacity:.4} }
+@keyframes dot1 { 0%,60%,100%{transform:translateY(0);opacity:.4} 30%{transform:translateY(-8px);opacity:1} }
+@keyframes dot2 { 0%,60%,100%{transform:translateY(0);opacity:.4} 40%{transform:translateY(-8px);opacity:1} }
+@keyframes dot3 { 0%,60%,100%{transform:translateY(0);opacity:.4} 50%{transform:translateY(-8px);opacity:1} }
+.anim-spin { animation:spin 1s linear infinite; }
+.anim-pulse { animation:pulse2 1.6s ease infinite; }
+.dot1{animation:dot1 1.2s infinite} .dot2{animation:dot2 1.2s infinite} .dot3{animation:dot3 1.2s infinite}
+.btn-grad { background:linear-gradient(135deg,#4f46e5,#7c3aed,#6366f1);background-size:200% 200%;transition:transform .2s,box-shadow .2s; }
+.btn-grad:hover { transform:translateY(-2px);box-shadow:0 8px 28px rgba(99,102,241,.45); }
+input[type="range"] { accent-color:var(--primary); }
+::selection { background:rgba(99,102,241,.3);color:var(--text); }
+
+@keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
